@@ -10,20 +10,21 @@ import {
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
-import { Github, Instagram } from "lucide-react";
+import { Instagram } from "lucide-react";
 import Link from "next/link";
-
+import { IoOpenOutline } from "react-icons/io5";
+import { IoMdMail } from "react-icons/io";
 
 export default function Hero() {
     return (
-        <section className="py-10 px-7 md:px-20 lg:px-32">
+        <section className="py-10 mt-2 px-7 md:px-20 lg:px-32">
             <div className="grid gap-3 max-w-2xl">
                 <h2 className="text-3xl font-medium text-gray-900 dark:text-gray-50 sm:text-4xl"><span className="font-serif">I</span> am <span className="font-serif">R</span>ahul <span className="font-serif">R</span>ajput, <span className="animate-text-gradient sm:inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400 italic">self thought full stack developer</span> from <span className="font-medium">India.</span></h2>
                 <p className="text-base text-gray-400 -mt-1 mb-3">A full stack developer with a passion for creating modern and intuitive web applications.</p>
                 <div className="flex gap-3">
                     <Dialog>
                         <DialogTrigger asChild>
-                            <Button>GetIn Touch</Button>
+                            <Button className="flex items-center gap-1">GetIn Touch <IoMdMail className="w-4 h-4"/></Button>
                         </DialogTrigger>
                         <DialogContent>
                             <DialogHeader>
@@ -56,7 +57,7 @@ export default function Hero() {
                             </form>
                         </DialogContent>
                     </Dialog>
-                    <Button variant="outline">Resume</Button>
+                    <Button variant="outline" className="flex items-center gap-1">Resume <IoOpenOutline className="w-4 h-4"/></Button>
                 </div>
             </div>
         </section>

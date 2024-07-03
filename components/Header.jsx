@@ -15,7 +15,7 @@ export default function Header() {
                     <h1 className="text-lg font-medium">Rahul Rajput</h1>
                     <div className="flex items-center gap-1">
                         <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-green-500"></div>
-                        <p className="text-xs text-gray-400 -mt-0.5">Avilabele for work!</p>
+                        <p className="text-xs text-gray-400 -mt-0.5">Avilable for work!</p>
                     </div>
                 </div>
             </div>

@@ -24,7 +24,7 @@ export default function Hero() {
                 <div className="flex gap-3">
                     <Dialog>
                         <DialogTrigger asChild>
-                            <Button className="flex items-center gap-1">GetIn Touch <IoMdMail className="w-4 h-4"/></Button>
+                            <Button variant="gooeyLeft">GetIn Touch</Button>
                         </DialogTrigger>
                         <DialogContent>
                             <DialogHeader>
@@ -41,7 +41,7 @@ export default function Hero() {
                                     <Input id="email" placeholder="Email" type="email" required />
                                     <Label htmlFor="message" className="-mb-2">Message</Label>
                                     <Textarea id="message" placeholder="Message" className="min-h-[100px]" required />
-                                    <Button type="submit" className="mt-1">Submit</Button>
+                                    <Button type="submit" className="mt-1" variant="shine">Submit</Button>
                                     <div className="flex gap-3 items-center">
                                         <span className="text-sm text-gray-500">or</span>
                                         <div className="flex items-center gap-2">

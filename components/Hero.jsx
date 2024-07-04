@@ -24,7 +24,7 @@ export default function Hero() {
                 <div className="flex gap-3">
                     <Dialog>
                         <DialogTrigger asChild>
-                            <Button variant="gooeyLeft">GetIn Touch</Button>
+                            <Button variant="shine">GetIn Touch</Button>
                         </DialogTrigger>
                         <DialogContent>
                             <DialogHeader>

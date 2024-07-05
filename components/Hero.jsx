@@ -11,8 +11,9 @@ import {
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
-import { Instagram } from "lucide-react";
+import { Instagram, Loader2 } from "lucide-react";
 import Link from "next/link";
+import { toast } from "sonner";
 import { IoOpenOutline } from "react-icons/io5";
 import {
     Drawer,
@@ -25,9 +26,38 @@ import {
     DrawerTrigger,
 } from "@/components/ui/drawer";
 import { useMediaQuery } from "@/query/useMediaQuery";
+import { useState } from "react";
 
 export default function Hero() {
     const isBreakpoint = useMediaQuery(768);
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [isSending, setIsSending] = useState(false);
+
+    const sendEmail = async (e) => {
+        setIsSending(true);
+        e.preventDefault();
+        await fetch("/api/send", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ name, email, message }),
+        }).then((data) => data.json()).then((data) => {
+            if (data.id) {
+                toast("Your message has been sent!");
+                setIsSending(false);
+                setName("");
+                setEmail("");
+                setMessage("");
+                return true;
+            }
+            toast(data.error);
+            setIsSending(false);
+            return false;
+        });
+    };
 
     return (
         <section className="py-10 mt-3 px-7 md:px-20 lg:px-32">
@@ -37,7 +67,7 @@ export default function Hero() {
                 <div className="flex gap-3">
                     {!isBreakpoint ? (
                         <>
-                            <Drawer>
+                            <Drawer shouldScaleBackground>
                                 <DrawerTrigger asChild>
                                     <Button variant="shine">GetIn Touch</Button>
                                 </DrawerTrigger>
@@ -47,15 +77,15 @@ export default function Hero() {
                                         <DrawerDescription>Fill in the form to get in touch with me.</DrawerDescription>
                                     </DrawerHeader>
                                     <DrawerFooter>
-                                        <form method="get" action="https://wa.me/+918108068981?text=">
+                                        <form method="post" onSubmit={sendEmail}>
                                             <div className="grid gap-4">
                                                 <Label htmlFor="name" className="-mb-2">Name</Label>
-                                                <Input id="name" placeholder="Name" type="text" required />
+                                                <Input autoComplete="off" value={name} onChange={(e) => setName(e.target.value)} id="name" placeholder="Name" type="text" required />
                                                 <Label htmlFor="email" className="-mb-2">Email</Label>
-                                                <Input id="email" placeholder="Email" type="email" required />
+                                                <Input value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="off" id="email" placeholder="Email" type="email" required />
                                                 <Label htmlFor="message" className="-mb-2">Message</Label>
-                                                <Textarea id="message" placeholder="Message" className="min-h-[100px]" required />
-                                                <Button type="submit" className="mt-1" variant="shine">Send</Button>
+                                                <Textarea value={message} onChange={(e) => setMessage(e.target.value)} autoComplete="off" id="message" placeholder="Message" className="min-h-[100px]" required />
+                                                <Button type="submit" className="mt-1" variant="shine" disabled={isSending}>{isSending ? <Loader2 className="w-4 h-4 animate-spin" /> : "Send "}</Button>
                                                 <div className="flex gap-3 items-center">
                                                     <span className="text-sm text-gray-500">or</span>
                                                     <div className="flex items-center gap-2">
@@ -96,15 +126,15 @@ export default function Hero() {
                                             <p>Fill in the form to get in touch with me.</p>
                                         </DialogDescription>
                                     </DialogHeader>
-                                    <form method="get" action="https://wa.me/+918108068981?text=">
+                                    <form method="post" onSubmit={sendEmail}>
                                         <div className="grid gap-4 py-2">
                                             <Label htmlFor="name" className="-mb-2">Name</Label>
-                                            <Input id="name" placeholder="Name" type="text" required />
+                                            <Input value={name} onChange={(e) => setName(e.target.value)} autoComplete="off" id="name" placeholder="Name" type="text" required />
                                             <Label htmlFor="email" className="-mb-2">Email</Label>
-                                            <Input id="email" placeholder="Email" type="email" required />
+                                            <Input value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="off" id="email" placeholder="Email" type="email" required />
                                             <Label htmlFor="message" className="-mb-2">Message</Label>
-                                            <Textarea id="message" placeholder="Message" className="min-h-[100px]" required />
-                                            <Button type="submit" className="mt-1" variant="shine">Send</Button>
+                                            <Textarea value={message} onChange={(e) => setMessage(e.target.value)} autoComplete="off" id="message" placeholder="Message" className="min-h-[100px]" required />
+                                            <Button type="submit" className="mt-1" variant="shine" disabled={isSending}>{isSending ? <Loader2 className="w-4 h-4 animate-spin" /> : "Send "}</Button>
                                             <div className="flex gap-3 items-center">
                                                 <span className="text-sm text-gray-500">or</span>
                                                 <div className="flex items-center gap-2">

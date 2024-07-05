@@ -47,7 +47,7 @@ export default function Hero() {
                                         <DrawerDescription>Fill in the form to get in touch with me.</DrawerDescription>
                                     </DrawerHeader>
                                     <DrawerFooter>
-                                        <form>
+                                        <form method="get" action="https://wa.me/+918108068981?text=">
                                             <div className="grid gap-4">
                                                 <Label htmlFor="name" className="-mb-2">Name</Label>
                                                 <Input id="name" placeholder="Name" type="text" required />
@@ -55,7 +55,7 @@ export default function Hero() {
                                                 <Input id="email" placeholder="Email" type="email" required />
                                                 <Label htmlFor="message" className="-mb-2">Message</Label>
                                                 <Textarea id="message" placeholder="Message" className="min-h-[100px]" required />
-                                                <Button type="submit" className="mt-1" variant="shine">Submit</Button>
+                                                <Button type="submit" className="mt-1" variant="shine">Send</Button>
                                                 <div className="flex gap-3 items-center">
                                                     <span className="text-sm text-gray-500">or</span>
                                                     <div className="flex items-center gap-2">
@@ -96,7 +96,7 @@ export default function Hero() {
                                             <p>Fill in the form to get in touch with me.</p>
                                         </DialogDescription>
                                     </DialogHeader>
-                                    <form>
+                                    <form method="get" action="https://wa.me/+918108068981?text=">
                                         <div className="grid gap-4 py-2">
                                             <Label htmlFor="name" className="-mb-2">Name</Label>
                                             <Input id="name" placeholder="Name" type="text" required />
@@ -104,7 +104,7 @@ export default function Hero() {
                                             <Input id="email" placeholder="Email" type="email" required />
                                             <Label htmlFor="message" className="-mb-2">Message</Label>
                                             <Textarea id="message" placeholder="Message" className="min-h-[100px]" required />
-                                            <Button type="submit" className="mt-1" variant="shine">Submit</Button>
+                                            <Button type="submit" className="mt-1" variant="shine">Send</Button>
                                             <div className="flex gap-3 items-center">
                                                 <span className="text-sm text-gray-500">or</span>
                                                 <div className="flex items-center gap-2">

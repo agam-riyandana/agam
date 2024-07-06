@@ -69,7 +69,7 @@ export default function Hero() {
                         <>
                             <Drawer shouldScaleBackground>
                                 <DrawerTrigger asChild>
-                                    <Button variant="shine">GetIn Touch</Button>
+                                    <Button variant="shine" className="btn">GetIn Touch</Button>
                                 </DrawerTrigger>
                                 <DrawerContent>
                                     <DrawerHeader>
@@ -117,7 +117,7 @@ export default function Hero() {
                         <>
                             <Dialog>
                                 <DialogTrigger asChild>
-                                    <Button variant="shine">GetIn Touch</Button>
+                                    <Button variant="shine" className="btn">GetIn Touch</Button>
                                 </DialogTrigger>
                                 <DialogContent>
                                     <DialogHeader>

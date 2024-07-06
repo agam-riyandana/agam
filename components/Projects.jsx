@@ -15,7 +15,7 @@ export default function Projects() {
                             <h1 className="text-lg font-medium">{project.title}</h1>
                             <p className="text-sm text-gray-400">{project.description}</p>
                             <div className="mt-3 flex gap-3">
-                                <Button size="sm" asChild className="text-[13px]"><Link href={project.link} className="flex items-center gap-1">View <ArrowRight className="w-3.5 h-3.5 -rotate-45" /></Link></Button>
+                                <Button size="sm" asChild variant="gooeyLeft" className="text-[13px]"><Link href={project.link} className="flex items-center gap-1">View <ArrowRight className="w-3.5 h-3.5 -rotate-45" /></Link></Button>
                                 <Button asChild variant="secondary" size="sm" className="px-2.5"><Link href={project.github} className="flex items-center gap-1"><FaGithub className="w-4 h-4" /></Link></Button>
                             </div>
                         </div>

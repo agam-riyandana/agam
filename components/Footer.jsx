@@ -1,8 +1,10 @@
-export default function Footer(){
+import Link from "next/link";
+
+export default function Footer() {
     return (
-        <section className="px-6 md:px-20 lg:px-32 py-5">
+        <section className="px-6 md:px-20 lg:px-32 py-5 mt-10 text-center border-t">
             <div>
-                <p className="text-sm text-center text-gray-400">Coded with ❤️ by <a className="underline hover:text-gray-300 transition" href="https://github.com/r2hu1">r2hu1</a></p>
+                <p className="text-sm text-gray-300">&copy;2022 <Link href="/" className="text-sm text-gray-400 underline">r2hu1</Link> all rights reserved.</p>
             </div>
         </section>
     )

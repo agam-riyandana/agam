@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import Header from "@/components/Header";
 import { Toaster } from "@/components/ui/sonner";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
           >
             <Header />
             {children}
+            <Footer/>
             <Toaster position="top-right"/>
           </ThemeProvider>
         </div>

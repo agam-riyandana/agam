@@ -69,11 +69,11 @@ export default function Hero() {
                         <>
                             <Drawer shouldScaleBackground>
                                 <DrawerTrigger asChild>
-                                    <Button variant="shine" className="btn">GetIn Touch</Button>
+                                    <Button variant="shine" className="btn">Get In Touch</Button>
                                 </DrawerTrigger>
                                 <DrawerContent>
                                     <DrawerHeader>
-                                        <DrawerTitle>GetIn Touch</DrawerTitle>
+                                        <DrawerTitle>Get In Touch</DrawerTitle>
                                         <DrawerDescription>Fill in the form to get in touch with me.</DrawerDescription>
                                     </DrawerHeader>
                                     <DrawerFooter>

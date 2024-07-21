@@ -62,8 +62,8 @@ export default function Hero() {
     return (
         <section className="py-10 mt-3 px-7 md:px-20 lg:px-32">
             <div className="grid gap-3 max-w-2xl lg:max-w-4xl">
-                <h2 className="text-3xl font-medium text-gray-900 dark:text-gray-50 sm:text-4xl lg:text-5xl"><span className="font-serif">I</span> am <span className="font-serif">R</span>ahul <span className="font-serif">R</span>ajput, <span className="animate-text-gradient sm:inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400 italic">self thought full stack developer</span> from <span className="font-medium">India.</span></h2>
-                <p className="text-base dark:text-gray-400 text-gray-600 -mt-1 mb-3">A full stack developer with a passion for creating modern and intuitive web applications.</p>
+                <h2 className="text-3xl font-medium text-gray-900 dark:text-gray-50 sm:text-4xl lg:text-5xl"><span className="font-serif">I</span> am <span className="font-serif">A</span>gam <span className="font-serif">A</span>gam, <span className="animate-text-gradient sm:inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400 italic">I'm an Ordinary Person</span> from <span className="font-medium">Indonesia.</span></h2>
+                <p className="text-base dark:text-gray-400 text-gray-600 -mt-1 mb-3">I am a digital content creator and like new things .</p>
                 <div className="flex gap-3">
                     {!isBreakpoint ? (
                         <>
@@ -89,10 +89,10 @@ export default function Hero() {
                                                 <div className="flex gap-3 items-center">
                                                     <span className="text-sm text-gray-500">or</span>
                                                     <div className="flex items-center gap-2">
-                                                        <Link href="https://instagram.com/r.rah_ul">
+                                                        <Link href="https://instagram.com/agam_riyandana1">
                                                             <span className="cursor-pointer hover:bg-primary transition hover:text-primary-foreground bg-secondary/50 p-2 text-xs flex gap-1 items-center w-fit rounded-md px-3"><Instagram className="h-3 w-3" />Instagram</span>
                                                         </Link>
-                                                        <Link href="mailto:hi@rahul.eu.org">
+                                                        <Link href="mailto:admin@agamriyandana.my.id">
                                                             <span className="cursor-pointer hover:bg-primary transition hover:text-primary-foreground bg-secondary/50 p-2 text-xs flex gap-1 items-center w-fit rounded-md px-3">hi@rahul.eu.org</span>
                                                         </Link>
                                                     </div>
@@ -108,7 +108,7 @@ export default function Hero() {
                                 </DrawerTrigger>
                                 <DrawerContent>
                                     <DrawerFooter>
-                                        <iframe src="/resume.pdf" className="h-[500px] rounded-md"></iframe>
+                                        <iframe src="/" className="h-[500px] rounded-md"></iframe>
                                     </DrawerFooter>
                                 </DrawerContent>
                             </Drawer>
@@ -138,10 +138,10 @@ export default function Hero() {
                                             <div className="flex gap-3 items-center">
                                                 <span className="text-sm text-gray-500">or</span>
                                                 <div className="flex items-center gap-2">
-                                                    <Link href="https://instagram.com/r.rah_ul">
+                                                    <Link href="https://instagram.com/agam_riyandana1">
                                                         <span className="cursor-pointer hover:bg-primary transition hover:text-primary-foreground bg-secondary/50 p-2 text-xs flex gap-1 items-center w-fit rounded-md px-3"><Instagram className="h-3 w-3" />Instagram</span>
                                                     </Link>
-                                                    <Link href="mailto:hi@rahul.eu.org">
+                                                    <Link href="mailto:admin@agamriyandana.my.id">
                                                         <span className="cursor-pointer hover:bg-primary transition hover:text-primary-foreground bg-secondary/50 p-2 text-xs flex gap-1 items-center w-fit rounded-md px-3">hi@rahul.eu.org</span>
                                                     </Link>
                                                 </div>
@@ -155,7 +155,7 @@ export default function Hero() {
                                     <Button variant="outline" className="flex items-center gap-1">Resume <IoOpenOutline className="w-4 h-4" /></Button>
                                 </DialogTrigger>
                                 <DialogContent>
-                                    <iframe src="/resume.pdf" className="h-[500px] mt-3 w-full rounded-md"></iframe>
+                                    <iframe src="/" className="h-[500px] mt-3 w-full rounded-md"></iframe>
                                 </DialogContent>
                             </Dialog>
                         </>

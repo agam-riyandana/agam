@@ -93,7 +93,7 @@ export default function Hero() {
                                                             <span className="cursor-pointer hover:bg-primary transition hover:text-primary-foreground bg-secondary/50 p-2 text-xs flex gap-1 items-center w-fit rounded-md px-3"><Instagram className="h-3 w-3" />Instagram</span>
                                                         </Link>
                                                         <Link href="mailto:admin@agamriyandana.my.id">
-                                                            <span className="cursor-pointer hover:bg-primary transition hover:text-primary-foreground bg-secondary/50 p-2 text-xs flex gap-1 items-center w-fit rounded-md px-3">hi@rahul.eu.org</span>
+                                                            <span className="cursor-pointer hover:bg-primary transition hover:text-primary-foreground bg-secondary/50 p-2 text-xs flex gap-1 items-center w-fit rounded-md px-3">hi@agamriyandana.my.id</span>
                                                         </Link>
                                                     </div>
                                                 </div>
@@ -142,7 +142,7 @@ export default function Hero() {
                                                         <span className="cursor-pointer hover:bg-primary transition hover:text-primary-foreground bg-secondary/50 p-2 text-xs flex gap-1 items-center w-fit rounded-md px-3"><Instagram className="h-3 w-3" />Instagram</span>
                                                     </Link>
                                                     <Link href="mailto:admin@agamriyandana.my.id">
-                                                        <span className="cursor-pointer hover:bg-primary transition hover:text-primary-foreground bg-secondary/50 p-2 text-xs flex gap-1 items-center w-fit rounded-md px-3">hi@rahul.eu.org</span>
+                                                        <span className="cursor-pointer hover:bg-primary transition hover:text-primary-foreground bg-secondary/50 p-2 text-xs flex gap-1 items-center w-fit rounded-md px-3">hi@agamriyandana.my.id</span>
                                                     </Link>
                                                 </div>
                                             </div>

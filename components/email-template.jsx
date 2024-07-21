@@ -4,7 +4,7 @@ export const EmailTemplate = ({
     message
 }) => (
     <div className="bg-background text-foreground">
-        <p className="text-sm">This email is from `www.rahul.eu.org`</p>
+        <p className="text-sm">This email is from `agamriyandana.my.id`</p>
         <div className="p-6 rounded-md border border-border">
             <h1 className="text-2xl font-medium">{name}</h1>
             <span className="text-sm mt-2">{email}</span>

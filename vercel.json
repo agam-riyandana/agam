@@ -17,6 +17,10 @@
           "value": "nosniff"
         },
         {
+          "key": "x-powered-by",
+          "value": "Next.js"
+        },
+        {
           "key": "X-Frame-Options",
           "value": "SAMEORIGIN"
         },

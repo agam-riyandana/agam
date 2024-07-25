@@ -12,6 +12,7 @@ const poppins = Poppins({
 
 export const metadata = {
   title: "Agam Riyandana",
+  keywords: "agam, agamriyandana, my.id, domain Indonesia, Jember, pandi, portofolio",
   description: "I am a digital content creator and like new things.",
   icons: {
     icon: "https://github.com/agam-riyandana.png"

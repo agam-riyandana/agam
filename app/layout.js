@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Agam Riyandana Portofolio",
+  title: "Agam Riyandana | Portofolio",
   keywords: "agam, agamriyandana, my.id, domain Indonesia, Jember, pandi, portofolio, domain nusantara, digital, website, internasional, asia, eropa",
   description: "I am a digital content creator and like new things.",
   icons: {

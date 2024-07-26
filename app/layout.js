@@ -1,4 +1,5 @@
 import { Poppins } from "next/font/google";
+import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import Header from "@/components/Header";
@@ -28,7 +29,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+    <body>{children}</body>
+    <GoogleAnalytics gaId="G-B4Z3Q5WFD9" />
+    <body className={poppins.className}>
         <div vaul-drawer-wrapper="" className="antialiased">
           <ThemeProvider
             attribute="class"

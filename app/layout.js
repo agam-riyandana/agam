@@ -12,7 +12,13 @@ const poppins = Poppins({
 
 export const metadata = {
   title: "Agam Riyandana | Portofolio",
+  generator: 'Next.js',
+  applicationName: 'Next.js',
+  referrer: 'origin-when-cross-origin',
   keywords: "agam, agamriyandana, my.id, domain Indonesia, Jember, pandi, portofolio, domain nusantara, digital, website, internasional, asia, eropa",
+  authors: [{ name: 'Agam' }, { name: 'Riyandana', url: 'https://agamriyandana.my.id' }],
+  creator: 'Agam Riyandana',
+  publisher: 'Agam Riyandana',
   description: "I am a digital content creator and like new things.",
   icons: {
     icon: "https://github.com/agam-riyandana.png"

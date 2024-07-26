@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import { Toaster } from "@/components/ui/sonner";
 import Footer from "@/components/Footer";
 import Banner from "@/components/Banner";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
     <body className={poppins.className}>
         <Banner />
+        <GoogleAnalytics gaId="G-B4Z3Q5WFD9" />
         <div vaul-drawer-wrapper="" className="antialiased">
           <ThemeProvider
             attribute="class"

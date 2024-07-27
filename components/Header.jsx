@@ -8,7 +8,7 @@ export default function Header() {
         <header className="px-6 md:px-20 lg:px-32 py-5 flex items-center justify-between w-full">
             <div className="flex items-center gap-4">
                 <Avatar>
-                    <AvatarImage src="https://github.com/agam-riyandana.png" />
+                    <AvatarImage src="/agam.jpg" />
                     <AvatarFallback><Loader2 className="w-4 h-4 animate-spin" /></AvatarFallback>
                 </Avatar>
                 <div className="flex flex-col">

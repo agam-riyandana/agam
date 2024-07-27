@@ -14,8 +14,8 @@ export default function Header() {
                 <div className="flex flex-col">
                     <h1 className="text-lg font-medium">Agam Riyandana</h1>
                     <div className="flex items-center gap-1">
-                        <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-green-500"></div>
-                        <p className="text-xs text-gray-400 -mt-0.5">I am online</p>
+                        <div className="h-1.5 w-1.5 glowBg rounded-full bg-green-500"></div>
+                        <p className="text-xs text-gray-400 -mt-0.5">I am online!</p>
                     </div>
                 </div>
             </div>

@@ -108,7 +108,7 @@ export default function Hero() {
                                 </DrawerTrigger>
                                 <DrawerContent>
                                     <DrawerFooter>
-                                        <iframe src="/resume.pdf" className="h-[500px] rounded-md"></iframe>
+                                        <iframe src="/" className="h-[500px] rounded-md"></iframe>
                                     </DrawerFooter>
                                 </DrawerContent>
                             </Drawer>

@@ -22,7 +22,7 @@ export const metadata = {
   publisher: 'Agam Riyandana',
   description: "I am a digital content creator and like new things.",
   icons: {
-    icon: "/agam.jpg"
+    icon: "/next-js.svg"
   },
 };
 

@@ -7,24 +7,24 @@ const jsonLd: WithContext<FAQPage> = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Why should my password be unique?",
+      name: "Agam Riyandana Is",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "If you use the same password for both your email account and your bank account login, an attacker only needs to steal one password to get access to both accounts, doubling your exposure. If you've used that same password for 14 different accounts, you're making the attacker's job very, very easy. You can protect yourself by using a our <a href=\"https://shipped.club/free-tools/secret-password-generator\">Secret Password Generator</a> to create unique passwords.",
+        text: "Agam Riyandana  Is a Digital Creator from Indonesia<a href=\"https://agamriyandana.my.id\">Agam Riyandana</a> Portofolio.",
       },
     }
   ],
-  headline: "Strong Random Secrets and Password Generator",
+  headline: "Agam Riyandana Adalah",
   description:
-    "Free online tool to generate random strings and passwords in various formats.",
+    "Agam Riyandana  Is a Digital Creator from Indonesia.",
   author: {
     "@type": "Person",
-    name: "Luca Restagno",
-    url: "https://lucarestagno.com",
+    name: "Agam Riyandana",
+    url: "https://agamriyandana.my.id",
   },
   image: "",
-  datePublished: "2023-12-10",
-  dateModified: "2023-12-28",
+  datePublished: "2022-12-10",
+  dateModified: "2024-07-27",
 };
 
 export default function PasswordGeneratorLayout({

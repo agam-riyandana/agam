@@ -1,5 +1,6 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import "./global-error.js";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import Header from "@/components/Header";
 import { Toaster } from "@/components/ui/sonner";

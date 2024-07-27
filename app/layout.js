@@ -32,7 +32,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         <Banner />
-        <Schema />
         <div vaul-drawer-wrapper="" className="antialiased">
           <ThemeProvider
             attribute="class"

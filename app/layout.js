@@ -6,7 +6,6 @@ import Header from "@/components/Header";
 import { Toaster } from "@/components/ui/sonner";
 import Footer from "@/components/Footer";
 import Banner from "@/components/Banner";
-import { Analytics } from '@vercel/analytics/react';
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -33,7 +32,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         <Banner />
-        <Analytics />
         <div vaul-drawer-wrapper="" className="antialiased">
           <ThemeProvider
             attribute="class"

@@ -6,7 +6,6 @@ import Header from "@/components/Header";
 import { Toaster } from "@/components/ui/sonner";
 import Footer from "@/components/Footer";
 import Banner from "@/components/Banner";
-import type { Metadata } from 'next'
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,17 +20,14 @@ export const metadata = {
   referrer: 'origin-when-cross-origin',
   keywords: "agam, agamriyandana, my.id, domain Indonesia, Jember, pandi, portofolio, domain nusantara, digital, website, internasional, asia, eropa",
   authors: [{ name: 'Agam' }, { name: 'Riyandana', url: 'https://agamriyandana.my.id' }],
-  robots: {
-    index: true,
-    follow: true,
-    nocache: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Agam Riyandana',
+    description: 'The React Framework for the Web',
+    siteId: '/',
+    creator: '@agam_riyandana1',
+    creatorId: '1467726470533754880',
+    images: ['https://nextjs.org/og.png'], // Must be an absolute URL
   creator: 'Agam Riyandana',
   publisher: 'Agam Riyandana',
   description: "Perkenalkan, saya Agam Riyandana. Dunia digital selalu menarik bagi saya. Sejak kecil, saya sudah tertarik dengan cara komputer bekerja dan cara perangkat Seluler Bekerja dan bagaimana teknologi dapat mengubah dunia. Kini, saya menyalurkan minat tersebut dengan menjadi [Kreator Digital]. Saya percaya bahwa desain yang baik tidak hanya menarik secara visual, tetapi juga fungsional dan mudah digunakan.",

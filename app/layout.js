@@ -21,7 +21,7 @@ export const metadata = {
   authors: [{ name: 'Agam' }, { name: 'Riyandana', url: 'https://agamriyandana.my.id' }],
   creator: 'Agam Riyandana',
   publisher: 'Agam Riyandana',
-  description: "I am a digital content creator and like new things.",
+  description: "Perkenalkan, saya Agam Riyandana. Dunia digital selalu menarik bagi saya. Sejak kecil, saya sudah tertarik dengan cara komputer bekerja dan cara perangkat Seluler Bekerja dan bagaimana teknologi dapat mengubah dunia. Kini, saya menyalurkan minat tersebut dengan menjadi [Kreator Digital]. Saya percaya bahwa desain yang baik tidak hanya menarik secara visual, tetapi juga fungsional dan mudah digunakan.",
   icons: {
     icon: "/agam.jpg"
   },

@@ -13,9 +13,9 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  openGraph: {
   title: "Agam Riyandana | Portofolio",
   generator: 'Next.js',
+  manifest: 'https://agamriyandana.my.id/manifest.json',
   applicationName: 'Next.js',
   referrer: 'origin-when-cross-origin',
   keywords: "agam, agamriyandana, my.id, domain Indonesia, Jember, pandi, portofolio, domain nusantara, digital, website, internasional, asia, eropa",

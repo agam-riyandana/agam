@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import { Toaster } from "@/components/ui/sonner";
 import Footer from "@/components/Footer";
 import Banner from "@/components/Banner";
+import type { Metadata } from 'next'
 
 const poppins = Poppins({
   subsets: ["latin"],

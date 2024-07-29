@@ -22,9 +22,6 @@ export const metadata = {
   creator: 'Agam Riyandana',
   publisher: 'Agam Riyandana',
   description: "Perkenalkan, saya Agam Riyandana. Dunia digital selalu menarik bagi saya. Sejak kecil, saya sudah tertarik dengan cara komputer bekerja dan cara perangkat Seluler Bekerja dan bagaimana teknologi dapat mengubah dunia. Kini, saya menyalurkan minat tersebut dengan menjadi [Kreator Digital]. Saya percaya bahwa desain yang baik tidak hanya menarik secara visual, tetapi juga fungsional dan mudah digunakan.",
-  icons: {
-    icons: "/agam.jpg"
-  },
   metadataBase: new URL('https://agamriyandana.my.id'),
   alternates: {
     canonical: '/',
@@ -32,12 +29,11 @@ export const metadata = {
       'id-ID': '/id-ID',
       'en-US': '/en-US',
       'de-DE': '/de-DE',
-    },
-  },
-  openGraph: {
+      openGraph: {
     images: '/og-image.png',
+  icons: {
+    icon: "/agam.jpg"
   },
-},
 };
 
 export default function RootLayout({ children }) {

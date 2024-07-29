@@ -13,6 +13,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
+  openGraph: {
   title: "Agam Riyandana | Portofolio",
   generator: 'Next.js',
   applicationName: 'Next.js',
@@ -22,12 +23,6 @@ export const metadata = {
   creator: 'Agam Riyandana',
   publisher: 'Agam Riyandana',
   description: "Perkenalkan, saya Agam Riyandana. Dunia digital selalu menarik bagi saya. Sejak kecil, saya sudah tertarik dengan cara komputer bekerja dan cara perangkat Seluler Bekerja dan bagaimana teknologi dapat mengubah dunia. Kini, saya menyalurkan minat tersebut dengan menjadi [Kreator Digital]. Saya percaya bahwa desain yang baik tidak hanya menarik secara visual, tetapi juga fungsional dan mudah digunakan.",
-  languages: {
-  'id-ID': '/id-ID',
-  'en-US': '/en-US',
-  'de-DE': '/de-DE',
-  openGraph: {
-  images: '/og-image.png',
   icons: {
     icon: "/agam.jpg"
   },

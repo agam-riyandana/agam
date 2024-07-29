@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import { Toaster } from "@/components/ui/sonner";
 import Footer from "@/components/Footer";
 import Banner from "@/components/Banner";
+import Navbar from './navbar'
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,14 +21,6 @@ export const metadata = {
   referrer: 'origin-when-cross-origin',
   keywords: "agam, agamriyandana, my.id, domain Indonesia, Jember, pandi, portofolio, domain nusantara, digital, website, internasional, asia, eropa",
   authors: [{ name: 'Agam' }, { name: 'Riyandana', url: 'https://agamriyandana.my.id' }],
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Agam Riyandana',
-    description: 'The React Framework for the Web',
-    siteId: '/',
-    creator: '@agam_riyandana1',
-    creatorId: '1467726470533754880',
-    images: ['https://nextjs.org/og.png'], // Must be an absolute URL
   creator: 'Agam Riyandana',
   publisher: 'Agam Riyandana',
   description: "Perkenalkan, saya Agam Riyandana. Dunia digital selalu menarik bagi saya. Sejak kecil, saya sudah tertarik dengan cara komputer bekerja dan cara perangkat Seluler Bekerja dan bagaimana teknologi dapat mengubah dunia. Kini, saya menyalurkan minat tersebut dengan menjadi [Kreator Digital]. Saya percaya bahwa desain yang baik tidak hanya menarik secara visual, tetapi juga fungsional dan mudah digunakan.",
@@ -49,7 +42,8 @@ export default function RootLayout({ children }) {
             disableTransitionOnChange
           >
           <div className="absolute top-0 z-[-2] h-screen w-screen dark:bg-neutral-950 bg-background bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-          <Header />
+            <Navbar />
+            <Header />
             {children}
             <Footer/>
             <Toaster position="top-right"/>

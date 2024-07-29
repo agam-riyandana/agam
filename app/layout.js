@@ -20,14 +20,19 @@ export const metadata = {
   referrer: 'origin-when-cross-origin',
   keywords: "agam, agamriyandana, my.id, domain Indonesia, Jember, pandi, portofolio, domain nusantara, digital, website, internasional, asia, eropa",
   authors: [{ name: 'Agam' }, { name: 'Riyandana', url: 'https://agamriyandana.my.id' }],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
   creator: 'Agam Riyandana',
   publisher: 'Agam Riyandana',
-  verification: {
-    google: 'Xh8SIRFRdOQB9-6-64I1FVlQ7o6MBWqbEXa_s8ezLe8',
-    yandex: 'yandex',
-    yahoo: 'yahoo',
-    other: {
-      me: ['my-email', 'my-link'],
   description: "Perkenalkan, saya Agam Riyandana. Dunia digital selalu menarik bagi saya. Sejak kecil, saya sudah tertarik dengan cara komputer bekerja dan cara perangkat Seluler Bekerja dan bagaimana teknologi dapat mengubah dunia. Kini, saya menyalurkan minat tersebut dengan menjadi [Kreator Digital]. Saya percaya bahwa desain yang baik tidak hanya menarik secara visual, tetapi juga fungsional dan mudah digunakan.",
   icons: {
     icon: "/agam.jpg"

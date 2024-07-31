@@ -1,13 +1,10 @@
-// pages/team.jsx
-
+import Link from "next/link";
 import React from 'react';
 import '../styles/global.css'; // Import global styles
 
 const Team = () => {
   const teamMembers = [
-    { id: 1, name: 'Alice', role: 'Developer', image: '/images/alice.jpg' },
-    { id: 2, name: 'Bob', role: 'Designer', image: '/images/bob.jpg' },
-    { id: 3, name: 'Charlie', role: 'Project Manager', image: '/images/charlie.jpg' },
+    { id: 1, name: 'Agam Riyandana', role: 'Founder', image: '/agam.jpg' },
     // Tambahkan anggota tim lainnya di sini
   ];
 

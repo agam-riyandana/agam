@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import { Toaster } from "@/components/ui/sonner";
 import Footer from "@/components/Footer";
 import Banner from "@/components/Banner";
-import team from "@/components/team";
+import Team from "@/components/Team";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         <Banner />
-        <team />
+        <Team />
         <div vaul-drawer-wrapper="" className="antialiased">
           <ThemeProvider
             attribute="class"

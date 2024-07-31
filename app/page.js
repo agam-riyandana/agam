@@ -2,12 +2,14 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Team from "@/components/Team";
 
 export default function Page() {
   return (
     <main>
       <Hero />
       <Projects />
+      <Team />
       <div className="flex items-center justify-center mb-10">
         <Button variant="outline" asChild>
           <Link href="/">View All</Link>

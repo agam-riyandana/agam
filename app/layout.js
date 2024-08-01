@@ -29,27 +29,12 @@ export const metadata = {
   },
 };
 
-function MyApp({ Component, pageProps }) {
-  const [captchaValue, setCaptchaValue] = useState(null);
-
-  const handleCaptchaChange = (value) => {
-    setCaptchaValue(value);
-    // Anda bisa mengirim nilai captcha ke server untuk verifikasi
-  };
-
-  return (
-    <>
-      <Recaptcha onChange={handleCaptchaChange} />
-      <Component {...pageProps} />
-    </>
-  );
-}
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
         <Banner />
+        <Recaptcha onChange={handleCaptchaChange} />
         <div vaul-drawer-wrapper="" className="antialiased">
           <ThemeProvider
             attribute="class"

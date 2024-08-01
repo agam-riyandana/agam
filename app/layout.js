@@ -6,7 +6,6 @@ import Header from "@/components/Header";
 import { Toaster } from "@/components/ui/sonner";
 import Footer from "@/components/Footer";
 import Banner from "@/components/Banner";
-import Recaptcha from '../components/Recaptcha';
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -34,7 +33,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         <Banner />
-        <Recaptcha />
         <div vaul-drawer-wrapper="" className="antialiased">
           <ThemeProvider
             attribute="class"

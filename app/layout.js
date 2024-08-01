@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         <Banner />
-        <Recaptcha onChange={handleCaptchaChange} />
+        <Recaptcha />
         <div vaul-drawer-wrapper="" className="antialiased">
           <ThemeProvider
             attribute="class"

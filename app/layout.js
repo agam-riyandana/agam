@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import { Toaster } from "@/components/ui/sonner";
 import Footer from "@/components/Footer";
 import Banner from "@/components/Banner";
+import Recaptcha from '../components/Recaptcha';
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -27,6 +28,22 @@ export const metadata = {
     icon: "/agam.jpg"
   },
 };
+
+function MyApp({ Component, pageProps }) {
+  const [captchaValue, setCaptchaValue] = useState(null);
+
+  const handleCaptchaChange = (value) => {
+    setCaptchaValue(value);
+    // Anda bisa mengirim nilai captcha ke server untuk verifikasi
+  };
+
+  return (
+    <>
+      <Recaptcha onChange={handleCaptchaChange} />
+      <Component {...pageProps} />
+    </>
+  );
+}
 
 export default function RootLayout({ children }) {
   return (

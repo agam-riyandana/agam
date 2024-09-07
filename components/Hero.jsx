@@ -11,7 +11,7 @@ import {
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
-import { Instagram, Loader2 } from "lucide-react";
+import { Instagram, Loader2, Wallet } from "lucide-react";
 import Link from "next/link";
 import { toast } from "sonner";
 import { IoOpenOutline } from "react-icons/io5";
@@ -92,6 +92,9 @@ export default function Hero() {
                                                         <Link href="https://instagram.com/agam_riyandana1">
                                                             <span className="cursor-pointer hover:bg-primary transition hover:text-primary-foreground bg-secondary/50 p-2 text-xs flex gap-1 items-center w-fit rounded-md px-3"><Instagram className="h-3 w-3" />Instagram</span>
                                                         </Link>
+                                                        <Link href="https://paypal.me/AgamRiyandanaID">
+                                                            <span className="cursor-pointer hover:bg-primary transition hover:text-primary-foreground bg-secondary/50 p-2 text-xs flex gap-1 items-center w-fit rounded-md px-3"><Wallet className="h-3 w-3" />Paypal Me</span>
+                                                        </Link>
                                                         <Link href="mailto:admin@agamriyandana.my.id">
                                                             <span className="cursor-pointer hover:bg-primary transition hover:text-primary-foreground bg-secondary/50 p-2 text-xs flex gap-1 items-center w-fit rounded-md px-3">admin@agamriyandana.my.id</span>
                                                         </Link>
@@ -141,6 +144,9 @@ export default function Hero() {
                                                     <Link href="https://instagram.com/agam_riyandana1">
                                                         <span className="cursor-pointer hover:bg-primary transition hover:text-primary-foreground bg-secondary/50 p-2 text-xs flex gap-1 items-center w-fit rounded-md px-3"><Instagram className="h-3 w-3" />Instagram</span>
                                                     </Link>
+                                                    <Link href="https://paypal.me/AgamRiyandanaID">
+                                                            <span className="cursor-pointer hover:bg-primary transition hover:text-primary-foreground bg-secondary/50 p-2 text-xs flex gap-1 items-center w-fit rounded-md px-3"><Wallet className="h-3 w-3" />Paypal Me</span>
+                                                        </Link>
                                                     <Link href="mailto:admin@agamriyandana.my.id">
                                                         <span className="cursor-pointer hover:bg-primary transition hover:text-primary-foreground bg-secondary/50 p-2 text-xs flex gap-1 items-center w-fit rounded-md px-3">admin@agamriyandana.my.id</span>
                                                     </Link>

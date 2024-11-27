@@ -17,22 +17,4 @@ export default function About() {
                 proyek yang melibatkan teknologi terkini seperti React, Next.js, dan berbagai framework modern lainnya.
               </p>
               <p>
-                Saya percaya bahwa teknologi harus membuat hidup lebih mudah dan lebih baik.
-                Itulah mengapa saya selalu berusaha untuk membuat aplikasi yang tidak hanya fungsional,
-                tetapi juga mudah digunakan dan memberikan nilai tambah bagi pengguna.
-              </p>
-            </div>
-          </div>
-          <div className="relative h-[500px] rounded-lg overflow-hidden">
-            <Image
-              src="https://cdn-sdotid.adg.id/images/6be810a2-46ed-4590-b3e8-804dc2bcbd7b_930x931.webp.jpeg?height=500&width=500"
-              alt="Profile"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
+                Saya percaya bahwa tekno
